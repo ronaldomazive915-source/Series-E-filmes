@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RONY - Filmes e Séries Dublados HD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">RON<span>Y</span></div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Filmes</a></li>
+            <li><a href="series.html">Séries</a></li>
+            <li><a href="categories.html">Categorias</a></li>
+            <li><a href="#" onclick="search()">Buscar</a></li>
+            <li><a href="watch.html">Assistir</a></li>
+        </ul>
+        <div class="search-bar"><input type="text" id="query" placeholder="Buscar..."><button onclick="doSearch()">🔍</button></div>
+    </nav>
+    <main>
+        <section class="trending">
+            <h2>Em Alta no RONY</h2>
+            <div id="trending-list" class="grid"></div>
+        </section>
+        <section class="categories">
+            <h2>Categorias</h2>
+            <div class="cat-grid">
+                <a href="categories.html#romance">💕 Romance</a>
+                <a href="categories.html#acao">🔫 Ação</a>
+                <a href="categories.html#terror">👻 Terror</a>
+                <!-- Adicione mais -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script>loadTrending();</script>
+</body>
+</html>
